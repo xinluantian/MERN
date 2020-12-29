@@ -4,10 +4,10 @@ const mongoose = require("mongoose");
 
 // mongodb+srv://Luna:<password>@cluster0.3atzx.mongodb.net/<dbname>?retryWrites=true&w=majority
 // connect to database
-mongoose.connect(
-  "mongodb+srv://Luna:tian1210@cluster0.3atzx.mongodb.net/user?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
-);
+// mongoose.connect(
+//   "mongodb+srv://Luna:********@cluster0.3atzx.mongodb.net/user?retryWrites=true&w=majority",
+//   { useNewUrlParser: true, useUnifiedTopology: true }
+// );
 // check database connection
 let db = mongoose.connection;
 db.once("open", () => console.log("connected to the database"));
